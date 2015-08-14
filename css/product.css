@@ -1,0 +1,348 @@
+/************************************************************/
+/*     Zazzle Store Builder 1.5 Product Page CSS File      */
+/*  Mofify this file to change how the product page looks */
+/************************************************************/
+
+/************** Sets the background color of the page **************/
+body {
+	background:#eee;
+}
+
+/************** Sets the width/font/background/margins of the main product area **************/
+.mainShell {
+	margin:0 auto;
+	width:900px;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	background:#fff;
+	padding:0 0 9px 0;
+}
+
+/************** Sets all link colors **************/
+.mainShell a {
+	color:#000;
+}
+
+/************** Sets the outer spacing of the title area **************/
+.titleBar {
+	margin:9px 0;
+}
+
+/************** Sets the main title styles **************/
+.h1Title {
+	display:inline;
+	font-size:24px;
+	font-weight:bold;
+	margin:0;
+	text-align:left;
+	padding:0 0 0 18px;
+}
+
+/************** Sets the Twitter Stream title style **************/
+h3 {
+	padding:0;
+	margin:18px 0 0 18px;
+	font-size:14px;
+}
+
+/************** Sets the styles for the breadcrumb at the top of the page **************/
+.breadcrumbShell {
+	font-size:.9em;
+	padding:0 18px 9px;
+	background:#eee;
+}
+.breadcrumbSeparator {
+	font-size:.7em;
+}
+
+/************** Sets the position of the "See larger image" link **************/
+.zoomPopupLink {
+	text-align:right;
+	width:420px;
+	font-size:12px
+}
+
+/************** Sets the position of the zoom window **************/
+#zoomPopup {
+	position:absolute;
+	width:600px;
+	height:600px;
+	font-size:11px;
+	display:none;
+	top:28px;
+	z-index:9999;
+}
+
+/************** Sets the styles for the zoom window's header **************/
+.dialogHeader {
+	background:#eee none repeat scroll 0 0;
+	border:1px solid #666;
+	color:#000000;
+	padding:5px 10px;
+	width:580px;
+	font-weight:bold;
+	font-size:14px;
+}
+
+/************** Sets the styles for the zoom window header's "Close" link **************/
+.dialogHeader a {
+	display:block;
+	float:right;
+}
+
+/************** Sets the styles for the actual zoomed image **************/
+#zoomImg {
+	width:600px;
+	height:600px;
+	border:1px solid #666;
+	border-top:0px;
+	background:#fff;
+	cursor:pointer;
+	cursor:hand;
+}
+
+/************** This is the dark background that shows up underneath the zoom window **************/
+#dialogMask {
+	background-color:#000000;
+	cursor:not-allowed;
+	display:none;
+	height:100%;
+	left:0;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:3005;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+}
+
+/************** Sets the styles for the left side of the page, where the main product image and view selectors are **************/
+.ppLeft {
+	float:left;
+	width:400px;
+	margin:0 18px;
+}
+
+/************** Sets the styles for the view selectors under the main product image **************/
+.viewSelectors {
+	width:400px;
+	margin:0;
+	text-align:center;
+	padding:9px 0;
+}
+.viewSelectors img {
+	border:1px solid #ccc;
+}
+.viewSelectors a:hover img {
+	border:1px solid #000;
+}
+
+/************** Main product image box **************/
+.productImageShell {
+	margin-right:18px;
+	width:400px;
+	height:400px;
+}
+
+/************** Main product image **************/
+.productImage {
+	border:1px solid #ddd;
+	width:400px;
+	height:400px;
+}
+
+/************** The right side of the product page (the styles/colors/buy button area) **************/
+.ppRight {
+	float:left;
+	width:446px;
+	position:relative;
+}
+.productInfoShell {
+	border:1px solid #ddd;
+	padding:18px;
+	background:#f5f5f5;
+	font-size:14px;
+}
+
+/************** The price box **************/
+.priceShell {
+	float:right;
+	margin-left:9px;
+}
+
+/************** The actual price **************/
+.ppPrice {
+	padding:5px 0 0 0;
+	text-align:center;
+}
+.ppUnitPrice {
+	color:#BC1413;
+	font-weight:bold;
+}
+
+/************** The buy button box **************/
+.buyButtonShell {
+	border:1px solid #ddd;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.buyButtonShell a {
+	color:#fff;
+	text-decoration:none;
+}
+
+/************** The actual buy button **************/
+.buyNowButton {
+	display:block;
+	width:118px;
+	height:40px;
+	font-weight:bold;
+	font-size:16px;
+	float:left;
+	cursor:pointer;
+	background:#fb720d;
+	border-color:#fff #ddd #ddd #fff;
+	border-style:solid;
+	border-width:2px;
+	text-align:center;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.buyNowButton:hover {
+	border-color:#ddd #fff #fff #ddd;
+}
+.buyNowText {
+	margin:11px 0 0 0;
+}
+
+/************** The "Choose more styles" and "Choose more colors" links **************/
+.moreLink {
+	font-size:.7em;
+	display:block;
+}
+
+/************** The Style box **************/
+.styleShell {
+	margin:0;
+}
+
+/************** The Color box **************/
+.colorShell {
+	margin:18px 0 0 0;
+}
+
+/************** The Size box **************/
+.sizeShell {
+	margin:18px 0 0 0;
+}
+
+/************** Creation date and product ID area **************/
+.smallInfo {
+	margin:98px 0 0 0;
+	border-top:2px outset #fff;
+}
+
+/************** The creation date **************/
+.dateShell {
+	font-size: 11px;
+	margin:9px 0 0 0;
+	overflow:hidden;
+}
+
+/************** The Product ID **************/
+.idShell {
+	font-size:11px;
+	margin-top:2px;
+}
+
+/************** Embed code **************/
+#productEmbedCode {
+	width:409px;
+	height:20px;
+	background:#f5f5f5;
+	border:1px solid #ddd;
+	color:#666;
+	margin:6px 0 0 13px;
+}
+.embedCode {
+	margin:9px 0 0 0;
+	font-weight:bold;
+	font-size:12px;
+}
+
+/************** Related Products Section **************/
+#productRecommendationsShell {
+	width:100%;
+	font-weight:bold;
+	font-size:12px;
+	margin-top:9px;
+}
+#productRecommendationsCenter{
+	margin:9px auto;
+	width:420px;
+}
+#productRecommendationsCenter a{
+	display:block;
+	float:left;
+	width:94px;
+	border:1px solid #ddd;
+	margin:0px 9px 0 0;
+}
+#productRecommendationsCenter a:hover{
+	border:1px solid #000;
+}
+.relatedProduct {
+	border:0px;
+	width:92px;
+	height:92px;
+}
+
+/************** The main product description under the main product image **************/
+.descriptionShell {
+	font-size:1.2em;
+	margin:9px 9px 0px 18px;
+}
+
+/************** The Twitter Stream under the main description **************/
+.twitterStream {
+	padding:18px;
+	font-size:12px;
+	border:1px solid #ddd;
+	margin:9px 18px;
+}
+
+/************** The dividing lines between each Twitter entry **************/
+.twitterStream .hr {
+	border-bottom:1px dashed #ccc;
+	margin:18px 0;
+}
+
+/************** The Twitter author color **************/
+.twitterAuthor {
+	color:#666;
+}
+
+/************** The Twitter date **************/
+.twitterAuthorDate {
+	margin:4px 0 0 0;
+}
+
+/************** The Twitter text (tweet) **************/
+.twitterText {
+	font-size:14px;
+}
+
+/************** The Twitter date **************/
+.twitterDate {
+	color:#666;
+}
+
+/************** The main store link at the top right of the page **************/
+.storeLink {
+	float:right;
+}
+
+/************** Just a style used to clear floats. Leave this one :-) **************/
+.clearBoth {
+	clear:both;
+}
