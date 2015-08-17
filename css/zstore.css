@@ -15,7 +15,7 @@
 	}
 /* This is the style given to the product image link by default */
 	.gridCell .realviewLink {
-		border:1px solid #AFD0F8;
+		/*border:1px solid #AFD0F8;*/
 		display:block;
 		padding:0px;
 	}
@@ -33,13 +33,13 @@
 	}
 /* This is the style given to the text underneath the image (title, description, price...) */
 	.gridCellInfo {
-		text-align:center;
+		/*text-align:center;*/
 		font-size:.75em;
 		font-family:Verdana,Arial,Helvetica,sans-serif;
 	}
 /* Centers text under the product  */
 	.gridCellInfo a, .gridCellInfo a span {
-		text-align:center;
+		text-align:left;
 	}
 /* This is the main container for the grid of products */
 	.allGrids {
@@ -116,18 +116,25 @@
 	.productDescription {
 		cursor: default;
 		text-decoration: none;
+		text-align: left;
 		position:relative;
+		text-transform: capitalize;
 	}
 /* The product title text */
 	.productTitle {
 		display:block;
 		font-weight:bold;
+		font-size: 12px;
+		text-transform: capitalize;
 	}
 /* Product price text */
 	.productPrice {
 		cursor: default;
 		text-decoration: none;
-		font-size: 8pt;
+		text-align: left;
+		font-size: 12pt;
+		color: #222;
+		font-weight: bold;
 	}
 /* The pagination arrows (previous/next)*/
 	.paginationArrows {

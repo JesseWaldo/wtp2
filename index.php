@@ -254,13 +254,13 @@ $_GET['showProductTitle'] = 'true';
 $_GET['showProductPrice'] = 'true';
 
 // This is how many results you want returned per page.
-$_GET['showHowMany'] = '20';
+$_GET['showHowMany'] = '21';
 
 // The size you want each grid cell (product image) - choices:  tiny, small, medium, large or huge
 $_GET['gridCellSize'] = 'large';
 
 // How many products do you want to display per row?
-$_GET['productsPerRow'] = '5';
+$_GET['productsPerRow'] = '4';
 
 // Load Zazzle Store Builder
 include "include/zstore.php";
@@ -271,7 +271,7 @@ include "include/zstore.php";
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; We The People Iterum 2015</p>
                 </div>
             </div>
         </footer>

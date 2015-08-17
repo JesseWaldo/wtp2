@@ -84,7 +84,7 @@ $_GET['gridPage'] = isset($_GET['gridPage']) ?  htmlspecialchars($_GET['gridPage
 $_GET['gridSort'] = isset($_GET['gridSort']) ?  htmlspecialchars($_GET['gridSort'],ENT_QUOTES) : "";
 
 if(isset($_GET['productsPerRow'])) {
-    $productsPerRow  = is_numeric($_GET['productsPerRow']) ? $_GET['productsPerRow'] : 5;
+    $productsPerRow  = is_numeric($_GET['productsPerRow']) ? $_GET['productsPerRow'] : 4;
 }
 
 if(isset($_GET['useAnalytics'])) {
@@ -230,7 +230,7 @@ if ($useFluidLayout){
 
 <!-- Powered by Zazzle. For more information, please visit http://www.zazzle.com  // -->
 <div class="allGrids clearfix">
-    <div class="centerGrids" style="width:<?php echo $rowWidth?>">
+    <div class="centerGrids" style="width: 100%;">
 <?php
 
     // This section of code fetches the Rss data from cache or fresh from the server, parses it, converts the data into
@@ -439,7 +439,7 @@ if ($useFluidLayout){
 
     echo "<div class=\"clearMe\"></div>";
     if ( $showPagination == 'true' || $showSorting == 'true') {
-        echo "<div class='count' style='width:".$countRowWidth."'>";
+        echo "<div class='count' style='width:100%;'>";
     }
 
       $gridSortHist = '';
@@ -484,7 +484,7 @@ if ($useFluidLayout){
           if ( $key=="items") {    // we only care about the <item> nodes in this case
               $numIteration = 0;
             if (!$useFluidLayout) {
-                echo "<div class=\"gridRow clearfix\" style=\"width:".$rowWidth.";margin-bottom:".$gridCellSpacing."px;\">";
+                echo "<div class=\"gridRow clearfix\" style=\"width:100%;margin-bottom: 20px;\">";
             }
             foreach( $val as $index => $value) {
                 $numIteration++;
@@ -492,7 +492,7 @@ if ($useFluidLayout){
                     if ($numIteration > $productsPerRow) {
                         echo "</div>";
                         $numIteration = 1;
-                        echo "<div class=\"gridRow clearfix\" style=\"width:".$rowWidth.";margin-bottom:".$gridCellSpacing."px;\">";
+                        echo "<div class=\"gridRow clearfix\" style=\"width:100%;margin-bottom: 20px;\">";
                     }
                 }
 //print_r($value);
@@ -568,7 +568,7 @@ if ($useFluidLayout){
                     } else {
                         $urlTitle = $urlTitle;
                     }
-                    $link = "productpage.php?title=".$urlTitle."&amp;pid=".$productId."&amp;rf=".$associateId;
+                    $link = "product.php?title=".$urlTitle."&amp;pid=".$productId."&amp;rf=".$associateId;
                     if ($useFriendlyUrls) {
                         $urlTitle = str_replace("/", '_', $urlTitle);
                         $urlTitle = str_replace("-", '_', $urlTitle);
@@ -619,7 +619,7 @@ if ($useFluidLayout){
 
 
             if($showProductTitle == 'true') {
-                $displaytitle = "<a href=\"$link\" $analyticsLink $nofollow class=\"productTitle\" title=\"$title\" style=\"width: ".$gridCellWidth."px;\">$title</a>";
+                $displaytitle = "<a href=\"$link\" $analyticsLink $nofollow class=\"productTitle\" title=\"$title\" style=\"width: 100%;\">$title</a>";
             }
 
             if($showProductDescription  == 'true') {
@@ -635,14 +635,14 @@ if ($useFluidLayout){
             }
 
             if($showProductPrice == 'true') {
-                $displayprice = "<div class=\"productPrice\">$$price</div>";
+                $displayprice = "<br /><div class=\"productPrice\">$price</div>";
             }
             $fluidGridCellSpacing = $useFluidLayout ? $gridCellSpacing : "0";
 
             // output the product's grid cell
             echo <<<EOD
-                <div class="gridCell" style="width: {$gridCellWidth}px;margin:0 {$gridCellSpacing}px {$fluidGridCellSpacing}px 0;min-height:{$gridCellHeight}px;">
-                    <a href="$link" $analyticsLink $nofollow class="realviewLink" style="height:{$gridCellHeight}px;"><img src="$imageSrc" class="realviewImage" alt="$title" title="" style="border:2px solid #$gridCellBgColor;width: {$gridCellSize}px;height: {$gridCellSize}px;" /></a>
+                <div class="gridCell" style="width: 21%;margin-left: 2%; margin-right: 2%;">
+                    <a href="$link" $analyticsLink $nofollow class="realviewLink" style=""><img src="$imageSrc" class="realviewImage" alt="$title" title="" style="border:2px solid #$gridCellBgColor;max-width: 100%;max-height: 100%;" /></a>
                     <div class="gridCellInfo">
                         $displaytitle
                         $desc
@@ -657,7 +657,7 @@ EOD;
 
     echo "<div class=\"clearMe\"></div><br />";
     if ( $showPagination == 'true' || $showSorting == 'true') {
-        echo "<div class='count' style='width:".$countRowWidth."'>\n\n";
+        echo "<div class='count' style='width:100%;'>\n\n";
     } else {
         echo "<div class='count' style='width:100%;'>";
     }
