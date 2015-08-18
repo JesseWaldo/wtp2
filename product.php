@@ -61,21 +61,21 @@ require_once 'include/productpage.php';
 			<div class="styleShell">
 				<strong><?=$styleLabel?>:</strong> <?=ucwords(str_replace("_"," ",$style))?> <span class="moreLink">(<a rel="nofollow" href="<?=$link?>" <?=$analyticsLink?>><?=$chooseMoreStyles?></a>)</span>
 			</div>
-			<? } ?>
+			<?php } ?>
 
 			<!-- Colors -->
 			<?php if (!empty($color)) {?>
 			<div class="colorShell">
 				<strong><?=$colorLabel?>:</strong> <?=ucwords(str_replace("_"," ",$color))?> <span class="moreLink">(<a rel="nofollow" href="<?=$link?>" <?=$analyticsLink?>><?=$chooseMoreColors?></a>)</span>
 			</div>
-			<? } ?>
+			<?php } ?>
 
 			<!-- Sizes -->
 			<?php if (!empty($sizes)) {?>
 			<div class="sizeShell">
 				<strong><?=$sizeLabel?>:</strong> <span class="moreLink">(<a rel="nofollow" href="<?=$link?>" <?=$analyticsLink?>><?=$chooseMoreSizes?></a>)</span>
 			</div>
-			<? } ?>
+			<?php } ?>
 
 			<!-- Creation Date and Product ID -->
 			<div class="smallInfo">

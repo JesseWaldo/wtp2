@@ -71,7 +71,7 @@ function clean_cache( ) {
 		
 	// now the rss cache file
 	$dh = opendir( 'c' );
-	$cachetime = time() - $this->cachelife;
+	/*$cachetime = time() - $this->cachelife;*/
 	while (false !== ($fname = readdir($dh) ) ) {
 	
 		if( is_dir( $fname )) continue;  // ignore '.' and '..'
@@ -109,4 +109,4 @@ function get_lifetime() {
 }
 
 
-?>
+/*?>*/

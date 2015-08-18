@@ -44,4 +44,4 @@ $closeLink = "Close";
 $viewLargerImage = "[+] See larger image";
 $twitterTitle = "Related Twitter Stream";
 $embedTitle = "Embed code:";
-?>
+/*?>*/

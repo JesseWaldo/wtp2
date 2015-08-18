@@ -278,4 +278,4 @@ EOD;
 			$pp_twitterStream .= "</div>";
 		}
 	}
-?>
+/*?>*/

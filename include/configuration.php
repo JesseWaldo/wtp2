@@ -11,7 +11,7 @@
 $contributorHandle = "wethepeopleiterum";
 
 // Your Zazzle Associate ID
-$associateId = "";
+$associateId = "238405734396908114";
 
 /**************************************************************/
 /*   OPTIONAL VARIABLES                                      */
@@ -169,7 +169,7 @@ $showTwitterStream = true;
 // 	"http://www.myzstore.com/store"
 // 	"/store"
 // 	"/"
-$mainStoreLink = "";
+$mainStoreLink = "http://127.0.0.1/WeThePeople";
 
 // The text you want your main store link to display.
 $mainStoreLinkText = "Find more creative custom products!";
@@ -237,4 +237,4 @@ $customFeedUrl = "";
 $zazzleURLBase = "zazzle.com";
 
 /* ******************************************* */
-?>
+/*?>*/
